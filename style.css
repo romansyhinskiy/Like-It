@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+header .headerContainer {
+  display: flex;
+  justify-content: center; }
+  @media screen and (max-width: 1200px) {
+    header .headerContainer .headerLogo {
+      display: none; } }
+  header .headerContainer .responsiveMenu {
+    font-family: "Playfair Display SC", serif;
+    font-weight: bold;
+    font-size: 19px;
+    text-align: center;
+    background-color: #bb8f72;
+    color: #fff; }
+    header .headerContainer .responsiveMenu:hover {
+      cursor: pointer; }
+    @media screen and (min-width: 1205px) {
+      header .headerContainer .responsiveMenu {
+        display: none; } }
+  header .headerContainer .headerItem {
+    font-family: "Playfair Display SC", serif;
+    font-weight: bold;
+    font-size: 19px;
+    margin: 54px 35px; }
+    header .headerContainer .headerItem:hover {
+      text-decoration: underline;
+      cursor: pointer;
+      transition: 0.3s ease; }
+    @media screen and (max-width: 1205px) {
+      header .headerContainer .headerItem {
+        display: none;
+        text-align: center;
+        background-color: #e1b396;
+        color: #fff;
+        border-bottom: 1ps solid #050505;
+        margin: 0;
+        padding-top: 15px; } }
+    @media screen and (max-width: 1205px) {
+      header .headerContainer .headerItem .headerLogo {
+        display: none; } }
+  header .headerContainer .icon {
+    color: #bb8f72; }
+  header .headerContainer .langTabs {
+    border-radius: 100%;
+    font-size: 14px;
+    width: 20px;
+    height: 20px; }
+    header .headerContainer .langTabs:hover {
+      background-color: #bb8f72;
+      text-decoration: none; }
+  @media screen and (max-width: 1205px) {
+    header .headerContainer {
+      display: block; } }
+
+@media screen and (max-width: 1205px) {
+  .headerContainer {
+    display: block; }
+
+  .headerItem {
+    display: block; } }
+/* Main Section*/
+.container-fluid .row .textDescription .date {
+  font-family: "Playfair Display SC", serif;
+  font-size: 15px;
+  margin-left: 70px;
+  margin-top: 200px; }
+  .container-fluid .row .textDescription .date .d {
+    font-size: 20px;
+    color: #bb8f72; }
+.container-fluid .row .textDescription .title h1 {
+  font-family: "Playfair Display SC", serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 42px;
+  margin-left: 100px;
+  margin-top: 50px; }
+.container-fluid .row .textDescription .description {
+  color: #797071;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin-top: 40px;
+  margin-left: 100px; }
+.container-fluid .row .textDescription .button button {
+  background-color: #fff;
+  border: 2px solid #bb8f72;
+  padding: 10px 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #bb8f72;
+  margin-top: 43px;
+  margin-left: 75px; }
+  .container-fluid .row .textDescription .button button:hover {
+    background-color: #bb8f72;
+    color: #fff;
+    transition: 0.3s ease-in; }
+@media screen and (max-width: 1200px) {
+  .container-fluid .row .textDescription {
+    display: block; } }
+.container-fluid .row .PhotoDecription {
+  margin-top: 50px; }
+  @media screen and (max-width: 1200px) {
+    .container-fluid .row .PhotoDecription {
+      display: block; } }
+  .container-fluid .row .PhotoDecription .img {
+    z-index: 33; }
+  .container-fluid .row .PhotoDecription .logoImg {
+    position: absolute;
+    top: 0;
+    left: -550px;
+    z-index: -2; }
+    @media screen and (max-width: 1117px) {
+      .container-fluid .row .PhotoDecription .logoImg {
+        display: none; } }
+
+/* Footer */
+.footer {
+  margin-top: 100px;
+  height: 36px;
+  background-color: #1f1d1d;
+  justify-content: space-between; }
+  .footer .copy {
+    color: #b2b1b1;
+    margin-top: 7px;
+    margin-left: 70px; }
+  .footer .itLogo {
+    margin-right: 100px;
+    margin-top: 7px;
+    color: #b2b1b1; }
+  @media screen and (max-width: 630px) {
+    .footer {
+      justify-content: center; }
+      .footer .copy {
+        display: none; } }
+
+/*# sourceMappingURL=style.css.map */

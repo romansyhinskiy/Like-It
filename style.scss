@@ -1,0 +1,178 @@
+$font: 'Playfair Display SC', serif;
+$color: #bb8f72;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    .headerContainer{
+        display: flex;
+        justify-content: center;
+       .headerLogo{
+        @media screen and (max-width: 1200px) {
+            display: none;
+        }
+        }
+        .responsiveMenu{
+            font-family: $font;
+            font-weight: bold;
+            font-size: 19px;
+            text-align: center;
+            background-color: $color;
+            color: #fff;
+            &:hover{
+                cursor: pointer;
+            }
+            @media screen and (min-width: 1205px) {
+                display: none;
+              }
+        }
+        .headerItem{
+            font-family: $font;
+            font-weight: bold;
+            font-size: 19px;
+            margin: 54px 35px;
+            &:hover{
+                text-decoration: underline;
+                cursor: pointer;
+                transition: 0.3s ease;
+            }
+            @media screen and (max-width: 1205px) {
+                display: none;
+                text-align: center;
+                background-color: #e1b396;
+                color: #fff;
+                border-bottom: 1ps solid rgb(5, 5, 5);
+                margin: 0;
+                padding-top: 15px;
+              }
+            .headerLogo{
+                @media screen and (max-width: 1205px) {
+                    display: none;
+                  }
+            }
+        }
+        .icon{
+            color: $color;
+        }
+        .langTabs{
+            border-radius: 100%;
+            font-size: 14px;
+            width: 20px;
+            height: 20px;
+            &:hover{
+                background-color: $color;
+                text-decoration: none;
+            }
+        }
+        @media screen and (max-width: 1205px) {
+            display: block;
+          }
+    }
+}
+@media screen and (max-width:1205px){
+    .headerContainer{
+        display: block;
+    }
+    .headerItem{
+        display: block;
+    }
+}
+
+/* Main Section*/
+.container-fluid{
+    .row{
+        .textDescription{
+            .date{
+                font-family: $font;
+                font-size: 15px;
+                margin-left: 70px;
+                margin-top: 200px;
+                .d{
+                    font-size: 20px;
+                    color: $color;
+                }
+            }
+            .title{
+                h1{
+                    font-family: $font;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    font-size: 42px;
+                    margin-left: 100px;
+                    margin-top: 50px;
+                }
+            }
+            .description{
+                    color: #797071;
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 16px;
+                    margin-top: 40px;
+                    margin-left: 100px;
+            }
+            .button{
+                button{
+                    background-color: #fff;
+                    border: 2px solid $color;
+                    padding: 10px 25px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 18px;
+                    color: $color;
+                    margin-top: 43px;
+                    margin-left: 75px;
+                    &:hover{
+                        background-color: $color;
+                        color: #fff;
+                        transition: 0.3s ease-in;
+                    }
+                }
+            }
+            @media screen and (max-width: 1200px) {
+                display: block;
+            }
+        }
+        .PhotoDecription{
+            margin-top: 50px;
+            @media screen and (max-width: 1200px) {
+                display: block;
+            }
+            .img{
+                z-index: 33;
+            }
+            .logoImg{
+                position: absolute;
+                top: 0;
+                left: -550px;
+                z-index: -2;
+                @media screen and (max-width: 1117px) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+/* Footer */
+.footer{
+    margin-top: 100px;  
+    height: 36px;
+    background-color: #1f1d1d;
+    justify-content: space-between;
+    .copy{
+        color: #b2b1b1;
+        margin-top: 7px;
+        margin-left: 70px;
+    }
+    .itLogo{
+        margin-right: 100px;
+        margin-top: 7px;
+        color: #b2b1b1;
+    }
+    @media screen and (max-width: 630px){
+        justify-content: center;
+        .copy{
+            display: none;
+        }
+    }
+}
